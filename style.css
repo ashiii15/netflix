@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+     /* background-color: #001a33;  */
+    /* background: linear-gradient(180deg, rgba(0, 8, 29, 0) 0%, #00081D 93.46%); */
+    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)),url(https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg); 
+
 }
 .header{
     width: 100%;
@@ -15,8 +21,8 @@
 
 .header-content h2 {
     color:#fff;
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: 900;
 } 
 
 .nav-bar img{
@@ -26,27 +32,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 6%;
 }
-button{
-    width: 150px;
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.button img{
-    width: 13px;
-    margin-left: 5px;
+.buttons img{
+    width: 20px;
+    margin-left: 9px;
     color: #fff;
+    margin-right: 10px;
+
 }
 .btn{
-    width: 100px;
-    height: 35px;
-    margin-right: 12px;
-    background-color: #ff8533;
+    width: 100%;
+    height: 36px;
+    margin-right: -2px;
+    background-color: #e50914;
     color: #fff;
     border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 0 solid #645454
+
 }
-#btn1{
-    border: 1px solid white;
-    background-color: transparent;
+.btn1{
+    background: transparent;
 }
+
 .header-content{
      color: #fff;
      display: flex;
@@ -59,21 +77,18 @@ button{
 .header-content img{
     width: 20px;
 }
-.header-content h2{
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 50px;
-    font-family: Geomanist;
-    color: #fff;
-}
 .header-content h5{
     padding-top: 10px;
-    padding-right: 45px;
-    font-size: 15px;
-    font-weight: 200;
+    padding-right: 115px;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 .header-content p{
     padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-right: 115px;
+
 }
 .email-signup{
     width: 50%;
@@ -100,21 +115,30 @@ button{
 }
 /* features */
 .features{
-padding: 50px 12%;
-font-size: 17px;
-background-color: #001a33;
+padding: 50px 5%;
+background-color:#000033;
 color: #fff;
+margin: 0px 4%;
+font-size: 20px;
 }
 .row{
     display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
 }
 .text-col{
 flex-basis: 50%;
 margin-bottom: 20px;
+}
+.text-col h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.text-col p{
+    color: #fff;
 }
 .pic-col{
     flex-basis: 50%;
@@ -122,7 +146,7 @@ margin-bottom: 20px;
 }
 .pic-col img{
     display: block;
-    width: 90%;
+    width: 100%;
     margin-top: auto;
 }
 .faq{
@@ -132,12 +156,14 @@ margin-bottom: 20px;
 
 .faq h2{
     text-align: center;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 600;
     padding: 14px 3%;
+    margin-right: 33%;
+    margin-top: 10rem;
 }
 .faq-dats{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 .faq-dats li{
@@ -149,10 +175,9 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     padding: 20px;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 2px;
     position: relative;
-    background-color: #303030;
     cursor: pointer;
 }
 label::after{
@@ -174,4 +199,16 @@ input[type="radio"]{
 .faq input[type="radio"]:checked + label + .content{
     max-width: 600px;
     padding: 30px;
+}
+.bg-colr{
+    background-color: rgba(19,33,68,1)
+}
+.btn1{
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+btn1 h2{
+    color: #fff;
 }
